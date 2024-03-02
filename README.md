@@ -91,6 +91,7 @@ PARTITION (dt='2001-01-02', country='US');
 
 SHOW PARTITIONS logs900;
 ```
+![Data Partition Structure](Picture2.png)
 ```sql
 SELECT ts, dt, line
 FROM logs900
@@ -98,7 +99,7 @@ WHERE country='GB';
 ```
 
 
-![Data Partition Structure](path/to/partition_structure.png)
+
 ![Query Results by Country](path/to/query_results.png)
 
 ### Data Bucketing
