@@ -100,7 +100,7 @@ WHERE country='GB';
 
 
 
-![Query Results by Country](path/to/query_results.png)
+![Query Results by Country](Picture3.png)
 
 ### Data Bucketing
 
