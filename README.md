@@ -138,8 +138,9 @@ hdfs dfs -cat /user/hive/warehouse/bucketed_users900/000000_0
 hdfs dfs -cat /user/hive/warehouse/bucketed_users900/000001_0
 hdfs dfs -cat /user/hive/warehouse/bucketed_users900/000002_0
 hdfs dfs -cat /user/hive/warehouse/bucketed_users900/000003_0
-![image](https://github.com/prachitiJadhav/nalyzing-weather-data-from-the-National-Climatic-Data-Center-NCDC-records-using-Hadoop/assets/56185226/e772ee70-baaa-453d-b474-70b8f7373848)
+
 ```
+![image](Picture5.png)
 ```sql
 SELECT * FROM bucketed_users900
 TABLESAMPLE(BUCKET 1 OUT OF 4 ON id);
