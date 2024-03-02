@@ -44,7 +44,7 @@ FROM records900
 WHERE temperature != 9999 AND quality IN (0, 1, 4, 5, 9)
 GROUP BY year;
 ```
-![Max Temperature Query Results](path/to/screenshot.png)
+![Max Temperature Query Results](Picture1.png)
 
 ### Data Partitioning
 
