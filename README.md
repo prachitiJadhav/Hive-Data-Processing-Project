@@ -144,20 +144,20 @@ hdfs dfs -cat /user/hive/warehouse/bucketed_users900/000003_0
 ```sql
 SELECT * FROM bucketed_users900
 TABLESAMPLE(BUCKET 1 OUT OF 4 ON id);
-![image](https://github.com/prachitiJadhav/nalyzing-weather-data-from-the-National-Climatic-Data-Center-NCDC-records-using-Hadoop/assets/56185226/2b4f7ce3-e808-4e20-90c5-d829e0cfcbec)
+
 ```
+![image](Picture6.png)
 ```sql
 SELECT * FROM bucketed_users900
 TABLESAMPLE(BUCKET 1 OUT OF 2 ON id);
-![image](https://github.com/prachitiJadhav/nalyzing-weather-data-from-the-National-Climatic-Data-Center-NCDC-records-using-Hadoop/assets/56185226/42dc7529-7228-4fa5-aae3-dd455c356007)
 ```
+![image](Picture7.png)
 ```sql
 SELECT * FROM users900
 TABLESAMPLE(BUCKET 1 OUT OF 4 ON rand());
-![image](https://github.com/prachitiJadhav/nalyzing-weather-data-from-the-National-Climatic-Data-Center-NCDC-records-using-Hadoop/assets/56185226/20b96af4-f21b-4543-8fbe-5849ed5a0b47)
 ```
-![Bucket Files in HDFS](path/to/bucket_files.png)
-![First Bucket Query Results](path/to/first_bucket_query.png)
+![image](Picture8.png)
+
 
 ## Usage
 
