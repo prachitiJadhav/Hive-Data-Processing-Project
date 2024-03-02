@@ -132,8 +132,7 @@ CLUSTERED BY (id) INTO 4 BUCKETS
 
 INSERT OVERWRITE TABLE bucketed_users900
 SELECT * FROM users900;
-```
-```sql
+
 hdfs dfs -ls /user/hive/warehouse/bucketed_users900/
 hdfs dfs -cat /user/hive/warehouse/bucketed_users900/000000_0
 hdfs dfs -cat /user/hive/warehouse/bucketed_users900/000001_0
