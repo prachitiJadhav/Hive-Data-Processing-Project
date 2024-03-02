@@ -122,6 +122,8 @@ OVERWRITE INTO TABLE users900;
 
 SELECT * FROM users900;
 ```
+![Query Results](Picture4.png)
+
 ```sql
 DROP TABLE IF EXISTS bucketed_users900;
 
